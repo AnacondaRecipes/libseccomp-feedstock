@@ -1,0 +1,70 @@
+# This file created by conda-build 3.22.0
+# ------------------------------------------------
+
+package:
+  name: libseccomp
+  version: 2.4.4
+source:
+  patches:
+    - 0001-Dynamic-linking-for-Python-package.patch
+  sha256: 4e79738d1ef3c9b7ca9769f1f8b8d84fc17143c2c1c432e53b9c64787e0ff3eb
+  url: https://github.com/seccomp/libseccomp/releases/download/v2.4.4/libseccomp-2.4.4.tar.gz
+build:
+  number: 3
+  run_exports:
+    - libseccomp >=2.4.4,<3.0a0
+  string: h166bdaf_3
+requirements:
+  build:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - binutils_impl_linux-64 2.39 h6ceecb4_0
+    - binutils_linux-64 2.39 h5fc0e48_11
+    - gcc_impl_linux-64 10.4.0 h5231bdf_19
+    - gcc_linux-64 10.4.0 h9215b83_11
+    - kernel-headers_linux-64 2.6.32 he073ed8_15
+    - ld_impl_linux-64 2.39 hc81fddc_0
+    - libgcc-devel_linux-64 10.4.0 hd38fd1e_19
+    - libgcc-ng 12.2.0 h65d4601_19
+    - libgomp 12.2.0 h65d4601_19
+    - libsanitizer 10.4.0 h5246dfb_19
+    - libstdcxx-ng 12.2.0 h46fd767_19
+    - make 4.3 hd18ef5c_1
+    - sysroot_linux-64 2.12 he073ed8_15
+  host:
+    - _libgcc_mutex 0.1 conda_forge
+    - _openmp_mutex 4.5 2_gnu
+    - libgcc-ng 12.2.0 h65d4601_19
+    - libgomp 12.2.0 h65d4601_19
+  run:
+    - libgcc-ng >=12
+test:
+  commands:
+    - test -f $PREFIX/lib/libseccomp.so
+    - test ! -f $PREFIX/lib/libseccomp.a
+about:
+  description: 'The libseccomp library provides an easy to use, platform independent,
+
+    interface to the Linux Kernel''s syscall filtering mechanism. The
+
+    libseccomp API is designed to abstract away the underlying BPF based
+
+    syscall filter language and present a more conventional function-call
+
+    based filtering interface that should be familiar to, and easily
+
+    adopted by, application developers.
+
+    '
+  dev_url: https://github.com/seccomp/libseccomp
+  home: https://github.com/seccomp/libseccomp
+  license: LGPL-2.1-only
+  license_file: LICENSE
+  summary: libseccomp provides an easy to use, platform independent, interface to
+    the Linux syscall filtering mechanism.
+extra:
+  copy_test_source_files: true
+  final: true
+  recipe-maintainers:
+    - mbargull
+    - sodre

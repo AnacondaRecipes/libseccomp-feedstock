@@ -1,0 +1,211 @@
+{
+  "paths": [
+    {
+      "_path": "bin/scmp_sys_resolver",
+      "path_type": "hardlink",
+      "sha256": "f9f6c3f3b847fce881d5e3993d1437c91c1c068ef93a78be6681c6a743e75211",
+      "size_in_bytes": 16592
+    },
+    {
+      "_path": "include/seccomp-syscalls.h",
+      "path_type": "hardlink",
+      "sha256": "d976c25d1e6935c79a77c79a0112ede850f61cf6cf60a57a00d5b1427aa2d5ef",
+      "size_in_bytes": 49244
+    },
+    {
+      "_path": "include/seccomp.h",
+      "path_type": "hardlink",
+      "sha256": "a97f8cc10024c64a13b7af7cf6edd339ec99c04c2ff8c5e4878c549f2ad1cff8",
+      "size_in_bytes": 22098
+    },
+    {
+      "_path": "lib/libseccomp.so",
+      "path_type": "softlink",
+      "sha256": "aec273d89461fad50ba337f684e8987df06be6a5ac40f6b8a75a7217190fbc49",
+      "size_in_bytes": 324032
+    },
+    {
+      "_path": "lib/libseccomp.so.2",
+      "path_type": "softlink",
+      "sha256": "aec273d89461fad50ba337f684e8987df06be6a5ac40f6b8a75a7217190fbc49",
+      "size_in_bytes": 324032
+    },
+    {
+      "_path": "lib/libseccomp.so.2.4.4",
+      "path_type": "hardlink",
+      "sha256": "aec273d89461fad50ba337f684e8987df06be6a5ac40f6b8a75a7217190fbc49",
+      "size_in_bytes": 324032
+    },
+    {
+      "_path": "lib/pkgconfig/libseccomp.pc",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/seccomp-split_1666827762829/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+      "sha256": "afbd66ff1459518b1adc24c49aa6d89df0aa63e505851e4c2b47dbaae2495459",
+      "size_in_bytes": 1260
+    },
+    {
+      "_path": "share/man/man1/scmp_sys_resolver.1",
+      "path_type": "hardlink",
+      "sha256": "1058af376e181cdeeb08bb7c1d39e18d07320614f475bb3e55f2568d5379faf1",
+      "size_in_bytes": 2834
+    },
+    {
+      "_path": "share/man/man3/seccomp_api_get.3",
+      "path_type": "hardlink",
+      "sha256": "58b8efb9179a5ce11a6743c0dfd6c53fe16b0b1e0e62b6ccbcac6115d98ac6ea",
+      "size_in_bytes": 3430
+    },
+    {
+      "_path": "share/man/man3/seccomp_api_set.3",
+      "path_type": "hardlink",
+      "sha256": "b75957aff19173c0d75e33500c838ffbb1384efa2adaeea6a4f6db5f98886968",
+      "size_in_bytes": 27
+    },
+    {
+      "_path": "share/man/man3/seccomp_arch_add.3",
+      "path_type": "hardlink",
+      "sha256": "37787c883edc89e503a5b947e1688dbb43b41cdf432c4154f45f9e862ee0a5ab",
+      "size_in_bytes": 4731
+    },
+    {
+      "_path": "share/man/man3/seccomp_arch_exist.3",
+      "path_type": "hardlink",
+      "sha256": "e03d37e47df4661863a477400543a5f5763a4ee843cae93ce2f30493d31f85d7",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_arch_native.3",
+      "path_type": "hardlink",
+      "sha256": "e03d37e47df4661863a477400543a5f5763a4ee843cae93ce2f30493d31f85d7",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_arch_remove.3",
+      "path_type": "hardlink",
+      "sha256": "e03d37e47df4661863a477400543a5f5763a4ee843cae93ce2f30493d31f85d7",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_arch_resolve_name.3",
+      "path_type": "hardlink",
+      "sha256": "e03d37e47df4661863a477400543a5f5763a4ee843cae93ce2f30493d31f85d7",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_attr_get.3",
+      "path_type": "hardlink",
+      "sha256": "7dd5888160ffbd5ddc07f71ff35e6141c26711efad9f480272c8af757ad19eca",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_attr_set.3",
+      "path_type": "hardlink",
+      "sha256": "69828a94d264918c129a44b392f9a8f2895ee3f62370bf7d742df0639f77fa75",
+      "size_in_bytes": 5113
+    },
+    {
+      "_path": "share/man/man3/seccomp_export_bpf.3",
+      "path_type": "hardlink",
+      "sha256": "1ea6dbd574446cadd8a57de769e5903ec3a19bfff6ee606084f84f117782757c",
+      "size_in_bytes": 3645
+    },
+    {
+      "_path": "share/man/man3/seccomp_export_pfc.3",
+      "path_type": "hardlink",
+      "sha256": "d643005c5481d1c6b56b20403dff4a5cfad4e6611aa03445b19a80cf13630197",
+      "size_in_bytes": 30
+    },
+    {
+      "_path": "share/man/man3/seccomp_init.3",
+      "path_type": "hardlink",
+      "sha256": "223455ee50139a15cd84fa2fe2c4f541d3668795fee6c0252044d6ff6d124dd4",
+      "size_in_bytes": 5213
+    },
+    {
+      "_path": "share/man/man3/seccomp_load.3",
+      "path_type": "hardlink",
+      "sha256": "75c83ce0e21f6441ed9a048cde64bb5a45b62fb4083de383b5f5684a4599f327",
+      "size_in_bytes": 2788
+    },
+    {
+      "_path": "share/man/man3/seccomp_merge.3",
+      "path_type": "hardlink",
+      "sha256": "1da86855f4af9b86418f642f9b625b5ccd241e09981d518a084ac8580d7583f3",
+      "size_in_bytes": 3868
+    },
+    {
+      "_path": "share/man/man3/seccomp_release.3",
+      "path_type": "hardlink",
+      "sha256": "16f93eabd8f7bb7761ad0e150b230029a71d5fc06f98cb6acd3746e3198c31b7",
+      "size_in_bytes": 2687
+    },
+    {
+      "_path": "share/man/man3/seccomp_reset.3",
+      "path_type": "hardlink",
+      "sha256": "3764c3b671a4501c74c327f7f164b14012190cb23e4f4820ad3c467db73e1beb",
+      "size_in_bytes": 24
+    },
+    {
+      "_path": "share/man/man3/seccomp_rule_add.3",
+      "path_type": "hardlink",
+      "sha256": "2ed9b74bc20e3983d9716202f3e36aaffce1310ddcc6440d55de5fc53e8f8dd6",
+      "size_in_bytes": 11084
+    },
+    {
+      "_path": "share/man/man3/seccomp_rule_add_array.3",
+      "path_type": "hardlink",
+      "sha256": "66b5740d4c2860bedfe7b8b6068605a447eb249616c20969d0961d6c9e08afad",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_rule_add_exact.3",
+      "path_type": "hardlink",
+      "sha256": "66b5740d4c2860bedfe7b8b6068605a447eb249616c20969d0961d6c9e08afad",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_rule_add_exact_array.3",
+      "path_type": "hardlink",
+      "sha256": "66b5740d4c2860bedfe7b8b6068605a447eb249616c20969d0961d6c9e08afad",
+      "size_in_bytes": 28
+    },
+    {
+      "_path": "share/man/man3/seccomp_syscall_priority.3",
+      "path_type": "hardlink",
+      "sha256": "2b39676d0ee9368347e63441ce60c669d3e2b080f2b5538aba8d7f5cbbdf1084",
+      "size_in_bytes": 3881
+    },
+    {
+      "_path": "share/man/man3/seccomp_syscall_resolve_name.3",
+      "path_type": "hardlink",
+      "sha256": "f20f23b60fc13ec9c54e76df42a4666ccb72327ee16ab65411f2f031bb559a4e",
+      "size_in_bytes": 4823
+    },
+    {
+      "_path": "share/man/man3/seccomp_syscall_resolve_name_arch.3",
+      "path_type": "hardlink",
+      "sha256": "4c191f9909ae2d6e735910c98c2a49ec554a9743ed1b85700af0c5b8731b9518",
+      "size_in_bytes": 40
+    },
+    {
+      "_path": "share/man/man3/seccomp_syscall_resolve_name_rewrite.3",
+      "path_type": "hardlink",
+      "sha256": "4c191f9909ae2d6e735910c98c2a49ec554a9743ed1b85700af0c5b8731b9518",
+      "size_in_bytes": 40
+    },
+    {
+      "_path": "share/man/man3/seccomp_syscall_resolve_num_arch.3",
+      "path_type": "hardlink",
+      "sha256": "4c191f9909ae2d6e735910c98c2a49ec554a9743ed1b85700af0c5b8731b9518",
+      "size_in_bytes": 40
+    },
+    {
+      "_path": "share/man/man3/seccomp_version.3",
+      "path_type": "hardlink",
+      "sha256": "24cadd28b111915de32ea542f327cbbb7260e2ebe7f4f6e314c7970b414b27f8",
+      "size_in_bytes": 2938
+    }
+  ],
+  "paths_version": 1
+}

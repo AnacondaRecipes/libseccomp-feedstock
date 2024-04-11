@@ -1,0 +1,77 @@
+{% set version = "2.4.4" %}
+
+package:
+  name: seccomp-split
+  version: {{ version }}
+
+source:
+  url: https://github.com/seccomp/libseccomp/releases/download/v{{ version }}/libseccomp-{{ version }}.tar.gz
+  sha256: 4e79738d1ef3c9b7ca9769f1f8b8d84fc17143c2c1c432e53b9c64787e0ff3eb
+  patches:
+    - 0001-Dynamic-linking-for-Python-package.patch
+
+build:
+  number: 3
+  skip: True  # [not linux]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - automake
+    - autoconf
+    - libtool
+    - make
+
+outputs:
+  - name: libseccomp
+    script: install_lib.sh
+    build:
+      run_exports:
+        # Has followed semver since 1.0.1 in 2012
+        # https://abi-laboratory.pro/index.php?view=timeline&l=libseccomp
+        - {{ pin_subpackage('libseccomp') }}
+    requirements:
+      build:
+        - {{ compiler('c') }}
+        - make
+    test:
+      commands:
+        - test -f $PREFIX/lib/libseccomp.so
+        - test ! -f $PREFIX/lib/libseccomp.a
+
+  - name: seccomp
+    script: install_python.sh
+    requirements:
+      build:
+        - {{ compiler('c') }}
+      host:
+        - cython
+        - python
+        - pip
+        - {{ pin_subpackage('libseccomp', exact=True) }}
+      run:
+        - {{ pin_subpackage('libseccomp', exact=True) }}
+        - python
+    test:
+      imports:
+        - seccomp
+
+about:
+  home: https://github.com/seccomp/libseccomp
+  license: LGPL-2.1-only
+  license_file: LICENSE
+  summary: 'libseccomp provides an easy to use, platform independent, interface to the Linux syscall filtering mechanism.'
+
+  description: |
+    The libseccomp library provides an easy to use, platform independent, 
+    interface to the Linux Kernel's syscall filtering mechanism. The 
+    libseccomp API is designed to abstract away the underlying BPF based 
+    syscall filter language and present a more conventional function-call
+    based filtering interface that should be familiar to, and easily 
+    adopted by, application developers.
+  dev_url: https://github.com/seccomp/libseccomp
+
+extra:
+  recipe-maintainers:
+    - mbargull
+    - sodre
