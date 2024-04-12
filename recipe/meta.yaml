@@ -65,6 +65,10 @@ about:
 extra:
   copy_test_source_files: true
   final: true
+  anaconda-services:
+    ref: https://anaconda.zendesk.com/agent/tickets/47182
+    reason: Client request
   recipe-maintainers:
+    - ianaobi
     - mbargull
     - sodre
